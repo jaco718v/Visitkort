@@ -1,11 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Image source = {{uri:'https://jobbank.dk/images/dynamic/company/logo/32529/',}}
+       style = {{width:200, height: 150}}/>
+       <View style={styles.container1}>
+      <Text >Med rettidig omhu</Text>
+      </View>
+      <StatusBar style="auto"/>
     </View>
   );
 }
@@ -13,8 +17,16 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#d8f9ff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  container1: {
+    backgroundColor: '#87CEEB',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 150,
+    height: 30,
+    borderRadius: 15,
   },
 });
